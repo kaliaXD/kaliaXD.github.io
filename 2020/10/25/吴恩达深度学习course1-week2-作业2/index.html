@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="吴恩达深度学习," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:type" content="article">
+<meta property="og:title" content="吴恩达深度学习course1 week2 作业2">
+<meta property="og:url" content="http://yoursite.com/2020/10/25/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0course1-week2-%E4%BD%9C%E4%B8%9A2/index.html">
+<meta property="og:site_name" content="Kalia的博客">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="article:published_time" content="2020-10-25T12:52:35.000Z">
+<meta property="article:modified_time" content="2020-10-25T12:54:35.512Z">
+<meta property="article:author" content="Kalia">
+<meta property="article:tag" content="吴恩达深度学习">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2020/10/25/吴恩达深度学习course1-week2-作业2/"/>
+
+
+
+
+
+  <title>吴恩达深度学习course1 week2 作业2 | Kalia的博客</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Kalia的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/10/25/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0course1-week2-%E4%BD%9C%E4%B8%9A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kalia">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kalia的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">吴恩达深度学习course1 week2 作业2</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-25T20:52:35+08:00">
+                2020-10-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> h5py</span><br><span class="line"><span class="keyword">import</span> scipy</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> ndimage</span><br><span class="line"><span class="keyword">from</span> lr_utils <span class="keyword">import</span> load_dataset</span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading the data (cat/non-cat)</span></span><br><span class="line">train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">预处理数据集的常见步骤是：</span></span><br><span class="line"><span class="string">1.找出数据的尺寸和维度（m_train，m_test，num_px等）</span></span><br><span class="line"><span class="string">2.重塑数据集，以使每个示例都是大小为（num_px \ num_px \ 3，1）的向量</span></span><br><span class="line"><span class="string">3.“标准化”数据</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### START CODE HERE ### (≈ 3 lines of code)</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">m_train（训练集示例数量）</span></span><br><span class="line"><span class="string">m_test（测试集示例数量）</span></span><br><span class="line"><span class="string">num_px（=训练图像的高度=训练图像的宽度）</span></span><br><span class="line"><span class="string">train_set_x_orig 是一个维度为（m_train，num_px，num_px，3）的numpy数组。(因为是RGB图所以是3) </span></span><br><span class="line"><span class="string">例如，你可以通过编写“ train_set_x_orig.shape [0]”来访问“ m_train”。</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">m_train = train_set_x_orig.shape[<span class="number">0</span>]</span><br><span class="line">m_test = test_set_x_orig.shape[<span class="number">0</span>]</span><br><span class="line">num_px = train_set_x_orig.shape[<span class="number">1</span>]</span><br><span class="line"><span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Number of training examples: m_train = "</span> + str(m_train))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Number of testing examples: m_test = "</span> + str(m_test))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Height/Width of each image: num_px = "</span> + str(num_px))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"Each image is of size: ("</span> + str(num_px) + <span class="string">", "</span> + str(num_px) + <span class="string">", 3)"</span>)</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"train_set_x shape: "</span> + str(train_set_x_orig.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"train_set_y shape: "</span> + str(train_set_y.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"test_set_x shape: "</span> + str(test_set_x_orig.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"test_set_y shape: "</span> + str(test_set_y.shape))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Reshape the training and test examples  重塑训练和测试数据集，以便将大小（num_px，num_px，3）的图像展平为单个形状的向量(num_px  num_px  3, 1)</span></span><br><span class="line"><span class="comment">### START CODE HERE ### (≈ 2 lines of code)</span></span><br><span class="line"><span class="comment">#数组新的shape属性应该要与原来的配套，如果等于-1的话，那么Numpy会根据剩下的维度计算出数组的另外一个shape属性值</span></span><br><span class="line">train_set_x_flatten = train_set_x_orig.reshape(train_set_x_orig.shape[<span class="number">0</span>], <span class="number">-1</span>).T  <span class="comment">#先得到了m*(num*num*3), 再转置</span></span><br><span class="line">test_set_x_flatten = test_set_x_orig.reshape(test_set_x_orig.shape[<span class="number">0</span>], <span class="number">-1</span>).T</span><br><span class="line"><span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">print</span> (<span class="string">"train_set_x_flatten shape: "</span> + str(train_set_x_flatten.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"train_set_y shape: "</span> + str(train_set_y.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"test_set_x_flatten shape: "</span> + str(test_set_x_flatten.shape))</span><br><span class="line"><span class="keyword">print</span> (<span class="string">"test_set_y shape: "</span> + str(test_set_y.shape))</span><br><span class="line"></span><br><span class="line"><span class="comment">#标准化（像素值实际上是一个从0到255的三个数字的向量）  （为什么不用归一化？？？？）</span></span><br><span class="line">train_set_x = train_set_x_flatten/<span class="number">255.</span></span><br><span class="line">test_set_x = test_set_x_flatten/<span class="number">255.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># GRADED FUNCTION: sigmoid</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sigmoid</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Compute the sigmoid of x</span></span><br><span class="line"><span class="string">    x可以是实数，向量或矩阵。 我们在numpy中使用的表示向量、矩阵等的数据结构称为numpy数组。</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Arguments:</span></span><br><span class="line"><span class="string">    x -- A scalar or numpy array of any size</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Return:</span></span><br><span class="line"><span class="string">    s -- sigmoid(x)</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">### START CODE HERE ### (≈ 1 line of code)</span></span><br><span class="line">    s = <span class="number">1</span> / (<span class="number">1</span> + np.exp(-x))</span><br><span class="line">    <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># GRADED FUNCTION: initialize_with_zeros  将w初始化</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">initialize_with_zeros</span><span class="params">(dim)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    This function creates a vector of zeros of shape (dim, 1) for w and initializes b to 0.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Argument:</span></span><br><span class="line"><span class="string">    dim -- size of the w vector we want (or number of parameters in this case)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    w -- initialized vector of shape (dim, 1)</span></span><br><span class="line"><span class="string">    b -- initialized scalar (corresponds to the bias)</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">### START CODE HERE ### (≈ 1 line of code)</span></span><br><span class="line">    w = np.zeros((dim, <span class="number">1</span>))  <span class="comment">#一个dim*1的都是0的矩阵</span></span><br><span class="line">    b = <span class="number">0</span></span><br><span class="line">    <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> (w.shape == (dim, <span class="number">1</span>))  <span class="comment">#？？</span></span><br><span class="line">    <span class="keyword">assert</span> (isinstance(b, float) <span class="keyword">or</span> isinstance(b, int))  <span class="comment">#？？</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> w, b</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># GRADED FUNCTION: propagate 正向传播与反向传播</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">propagate</span><span class="params">(w, b, X, Y)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Implement the cost function and its gradient for the propagation explained above</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Arguments:</span></span><br><span class="line"><span class="string">    w -- weights, a numpy array of size (num_px * num_px * 3, 1)</span></span><br><span class="line"><span class="string">    b -- bias, a scalar</span></span><br><span class="line"><span class="string">    X -- data of size (num_px * num_px * 3, number of examples)</span></span><br><span class="line"><span class="string">    Y -- true "label" vector (containing 0 if non-cat, 1 if cat) of size (1, number of examples)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Return:</span></span><br><span class="line"><span class="string">    cost -- negative log-likelihood cost for logistic regression</span></span><br><span class="line"><span class="string">    dw -- gradient of the loss with respect to w, thus same shape as w</span></span><br><span class="line"><span class="string">    db -- gradient of the loss with respect to b, thus same shape as b</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Tips:</span></span><br><span class="line"><span class="string">    - Write your code step by step for the propagation. np.log(), np.dot()</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    m = X.shape[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># FORWARD PROPAGATION (FROM X TO COST)</span></span><br><span class="line">    <span class="comment">### START CODE HERE ### (≈ 2 lines of code)</span></span><br><span class="line">    A = sigmoid(np.dot(w.T, X) + b)  <span class="comment"># compute activation</span></span><br><span class="line">    cost = <span class="number">-1</span> / m * np.sum(Y * np.log(A) + (<span class="number">1</span> - Y) * np.log(<span class="number">1</span> - A))  <span class="comment"># compute cost 总的损失的平均值</span></span><br><span class="line">    <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># BACKWARD PROPAGATION (TO FIND GRAD)</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    https://blog.csdn.net/weixin_38347387/article/details/82936585  看这个网页反向传播！！！！！</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="comment">### START CODE HERE ### (≈ 2 lines of code)</span></span><br><span class="line">    dw = <span class="number">1</span> / m * np.dot(X, (A - Y).T)</span><br><span class="line">    db = <span class="number">1</span> / m * np.sum(A - Y)</span><br><span class="line">    <span class="comment">### END CODE HERE ###</span></span><br><span class="line">    <span class="keyword">assert</span> (dw.shape == w.shape)  <span class="comment">#？？？</span></span><br><span class="line">    <span class="keyword">assert</span> (db.dtype == float)</span><br><span class="line">    cost = np.squeeze(cost)  <span class="comment">#squeeze函数的作用是去掉维度为1的维,在这就是将一个一维变成一个数字</span></span><br><span class="line">    <span class="keyword">assert</span> (cost.shape == ())</span><br><span class="line"></span><br><span class="line">    grads = &#123;<span class="string">"dw"</span>: dw,</span><br><span class="line">             <span class="string">"db"</span>: db&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> grads, cost</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># GRADED FUNCTION: optimize  优化函数 目标是通过最小化损失函数J来学习w和b。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">optimize</span><span class="params">(w, b, X, Y, num_iterations, learning_rate, print_cost=False)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    This function optimizes w and b by running a gradient descent algorithm</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Arguments:</span></span><br><span class="line"><span class="string">    w -- weights, a numpy array of size (num_px * num_px * 3, 1)</span></span><br><span class="line"><span class="string">    b -- bias, a scalar</span></span><br><span class="line"><span class="string">    X -- data of shape (num_px * num_px * 3, number of examples)</span></span><br><span class="line"><span class="string">    Y -- true "label" vector (containing 0 if non-cat, 1 if cat), of shape (1, number of examples)</span></span><br><span class="line"><span class="string">    num_iterations -- number of iterations of the optimization loop</span></span><br><span class="line"><span class="string">    learning_rate -- learning rate of the gradient descent update rule</span></span><br><span class="line"><span class="string">    print_cost -- True to print the loss every 100 steps</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    params -- dictionary containing the weights w and bias b</span></span><br><span class="line"><span class="string">    grads -- dictionary containing the gradients of the weights and bias with respect to the cost function</span></span><br><span class="line"><span class="string">    costs -- list of all the costs computed during the optimization, this will be used to plot the learning curve.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Tips:</span></span><br><span class="line"><span class="string">    You basically need to write down two steps and iterate through them:</span></span><br><span class="line"><span class="string">        1) Calculate the cost and the gradient for the current parameters. Use propagate().</span></span><br><span class="line"><span class="string">        2) Update the parameters using gradient descent rule for w and b.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    costs = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(num_iterations):</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Cost and gradient calculation (≈ 1-4 lines of code)</span></span><br><span class="line">        <span class="comment">### START CODE HERE ###</span></span><br><span class="line">        grads, cost = propagate(w, b, X, Y)</span><br><span class="line">        <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># Retrieve derivatives from grads</span></span><br><span class="line">        dw = grads[<span class="string">"dw"</span>]</span><br><span class="line">        db = grads[<span class="string">"db"</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># update rule (≈ 2 lines of code) 反向传播更新参数</span></span><br><span class="line">        <span class="comment">### START CODE HERE ###</span></span><br><span class="line">        w = w - learning_rate * dw</span><br><span class="line">        b = b - learning_rate * db</span><br><span class="line">        <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># Record the costs</span></span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">100</span> == <span class="number">0</span>:</span><br><span class="line">            costs.append(cost)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Print the cost every 100 training examples</span></span><br><span class="line">        <span class="keyword">if</span> print_cost <span class="keyword">and</span> i % <span class="number">100</span> == <span class="number">0</span>:</span><br><span class="line">            print(<span class="string">"Cost after iteration %i: %f"</span> % (i, cost))</span><br><span class="line"></span><br><span class="line">    params = &#123;<span class="string">"w"</span>: w,</span><br><span class="line">              <span class="string">"b"</span>: b&#125;</span><br><span class="line"></span><br><span class="line">    grads = &#123;<span class="string">"dw"</span>: dw,</span><br><span class="line">             <span class="string">"db"</span>: db&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> params, grads, costs</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># GRADED FUNCTION: predict 预测y-hat</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">predict</span><span class="params">(w, b, X)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    Predict whether the label is 0 or 1 using learned logistic regression parameters (w, b)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Arguments:</span></span><br><span class="line"><span class="string">    w -- weights, a numpy array of size (num_px * num_px * 3, 1)</span></span><br><span class="line"><span class="string">    b -- bias, a scalar</span></span><br><span class="line"><span class="string">    X -- data of size (num_px * num_px * 3, number of examples)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    Y_prediction -- a numpy array (vector) containing all predictions (0/1) for the examples in X</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line"></span><br><span class="line">    m = X.shape[<span class="number">1</span>]</span><br><span class="line">    Y_prediction = np.zeros((<span class="number">1</span>, m))</span><br><span class="line">    <span class="comment">#w = w.reshape(X.shape[0], 1)  这句话可以省略？？</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Compute vector "A" predicting the probabilities of a cat being present in the picture</span></span><br><span class="line">    <span class="comment">### START CODE HERE ### (≈ 1 line of code)</span></span><br><span class="line">    A = sigmoid(np.dot(w.T, X) + b)</span><br><span class="line">    <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(A.shape[<span class="number">1</span>]):</span><br><span class="line"></span><br><span class="line">        <span class="comment"># Convert probabilities A[0,i] to actual predictions p[0,i]</span></span><br><span class="line">        <span class="comment">### START CODE HERE ### (≈ 4 lines of code)</span></span><br><span class="line">        <span class="keyword">if</span> A[<span class="number">0</span>, i] &lt;= <span class="number">0.5</span>:</span><br><span class="line">            Y_prediction[<span class="number">0</span>, i] = <span class="number">0</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            Y_prediction[<span class="number">0</span>, i] = <span class="number">1</span></span><br><span class="line">        <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">assert</span> (Y_prediction.shape == (<span class="number">1</span>, m))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> Y_prediction</span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">dim = 2</span></span><br><span class="line"><span class="string">w, b = initialize_with_zeros(dim)</span></span><br><span class="line"><span class="string">print ("w = " + str(w))</span></span><br><span class="line"><span class="string">print ("b = " + str(b))</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">w, b, X, Y = np.array([[1],[2]]), 2, np.array([[1,2],[3,4]]), np.array([[1,0]])</span></span><br><span class="line"><span class="string">grads, cost = propagate(w, b, X, Y)</span></span><br><span class="line"><span class="string">print ("dw = " + str(grads["dw"]))</span></span><br><span class="line"><span class="string">print ("db = " + str(grads["db"]))</span></span><br><span class="line"><span class="string">print ("cost = " + str(cost))</span></span><br><span class="line"><span class="string">params, grads, costs = optimize(w, b, X, Y, num_iterations= 100, learning_rate = 0.009, print_cost = False)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">print ("w = " + str(params["w"]))</span></span><br><span class="line"><span class="string">print ("b = " + str(params["b"]))</span></span><br><span class="line"><span class="string">print ("dw = " + str(grads["dw"]))</span></span><br><span class="line"><span class="string">print ("db = " + str(grads["db"]))</span></span><br><span class="line"><span class="string">print(costs)</span></span><br><span class="line"><span class="string">print ("predictions = " + str(predict(w, b, X)))</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># GRADED FUNCTION: model  将前面的步骤整合起来</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">model</span><span class="params">(X_train, Y_train, X_test, Y_test, num_iterations=<span class="number">2000</span>, learning_rate=<span class="number">0.5</span>, print_cost=False)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Builds the logistic regression model by calling the function you've implemented previously</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Arguments:</span></span><br><span class="line"><span class="string">    X_train -- training set represented by a numpy array of shape (num_px * num_px * 3, m_train)</span></span><br><span class="line"><span class="string">    Y_train -- training labels represented by a numpy array (vector) of shape (1, m_train)</span></span><br><span class="line"><span class="string">    X_test -- test set represented by a numpy array of shape (num_px * num_px * 3, m_test)</span></span><br><span class="line"><span class="string">    Y_test -- test labels represented by a numpy array (vector) of shape (1, m_test)</span></span><br><span class="line"><span class="string">    num_iterations -- hyperparameter representing the number of iterations to optimize the parameters</span></span><br><span class="line"><span class="string">    learning_rate -- hyperparameter representing the learning rate used in the update rule of optimize()</span></span><br><span class="line"><span class="string">    print_cost -- Set to true to print the cost every 100 iterations</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Returns:</span></span><br><span class="line"><span class="string">    d -- dictionary containing information about the model.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">### START CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># initialize parameters with zeros (≈ 1 line of code)</span></span><br><span class="line">    w, b = initialize_with_zeros(X_train.shape[<span class="number">0</span>])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Gradient descent (≈ 1 line of code)</span></span><br><span class="line">    parameters, grads, costs = optimize(w, b, X_train, Y_train, num_iterations, learning_rate, print_cost)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Retrieve parameters w and b from dictionary "parameters"</span></span><br><span class="line">    w = parameters[<span class="string">"w"</span>]</span><br><span class="line">    b = parameters[<span class="string">"b"</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Predict test/train set examples (≈ 2 lines of code)</span></span><br><span class="line">    Y_prediction_test = predict(w, b, X_test)</span><br><span class="line">    Y_prediction_train = predict(w, b, X_train)</span><br><span class="line"></span><br><span class="line">    <span class="comment">### END CODE HERE ###</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># Print train/test Errors</span></span><br><span class="line">    print(<span class="string">"train accuracy: &#123;&#125; %"</span>.format(<span class="number">100</span> - np.mean(np.abs(Y_prediction_train - Y_train)) * <span class="number">100</span>))</span><br><span class="line">    print(<span class="string">"test accuracy: &#123;&#125; %"</span>.format(<span class="number">100</span> - np.mean(np.abs(Y_prediction_test - Y_test)) * <span class="number">100</span>))</span><br><span class="line"></span><br><span class="line">    d = &#123;<span class="string">"costs"</span>: costs,</span><br><span class="line">         <span class="string">"Y_prediction_test"</span>: Y_prediction_test,</span><br><span class="line">         <span class="string">"Y_prediction_train"</span>: Y_prediction_train,</span><br><span class="line">         <span class="string">"w"</span>: w,</span><br><span class="line">         <span class="string">"b"</span>: b,</span><br><span class="line">         <span class="string">"learning_rate"</span>: learning_rate,</span><br><span class="line">         <span class="string">"num_iterations"</span>: num_iterations&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> d</span><br><span class="line"></span><br><span class="line">d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = <span class="number">2000</span>, learning_rate = <span class="number">0.005</span>, print_cost = <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot learning curve (with costs)  画图</span></span><br><span class="line">costs = np.squeeze(d[<span class="string">'costs'</span>])</span><br><span class="line">plt.plot(costs)</span><br><span class="line">plt.ylabel(<span class="string">'cost'</span>)</span><br><span class="line">plt.xlabel(<span class="string">'iterations (per hundreds)'</span>)</span><br><span class="line">plt.title(<span class="string">"Learning rate ="</span> + str(d[<span class="string">"learning_rate"</span>]))</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改学习率看一看差别</span></span><br><span class="line">learning_rates = [<span class="number">0.01</span>, <span class="number">0.001</span>, <span class="number">0.0001</span>]</span><br><span class="line">models = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> learning_rates:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">"learning rate is: "</span> + str(i))</span><br><span class="line">    models[str(i)] = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = <span class="number">1500</span>, learning_rate = i, print_cost = <span class="literal">False</span>)</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'\n'</span> + <span class="string">"-------------------------------------------------------"</span> + <span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> learning_rates:</span><br><span class="line">    plt.plot(np.squeeze(models[str(i)][<span class="string">"costs"</span>]), label= str(models[str(i)][<span class="string">"learning_rate"</span>]))</span><br><span class="line"></span><br><span class="line">plt.ylabel(<span class="string">'cost'</span>)</span><br><span class="line">plt.xlabel(<span class="string">'iterations'</span>)</span><br><span class="line"></span><br><span class="line">legend = plt.legend(loc=<span class="string">'upper center'</span>, shadow=<span class="literal">True</span>)</span><br><span class="line">frame = legend.get_frame()</span><br><span class="line">frame.set_facecolor(<span class="string">'0.90'</span>)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## START CODE HERE ## (PUT YOUR IMAGE NAME)</span></span><br><span class="line"><span class="comment">#my_image = "dog.jpg"   # change this to the name of your image file</span></span><br><span class="line"><span class="comment">## END CODE HERE ##</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># We preprocess the image to fit your algorithm.</span></span><br><span class="line">fname = <span class="string">'dog.jpg'</span> <span class="comment">#和代码在一个目录下 且是jpg</span></span><br><span class="line">image = np.array(plt.imread(fname))</span><br><span class="line">my_image = scipy.misc.imresize(image, size=(num_px,num_px)).reshape((<span class="number">1</span>, num_px*num_px*<span class="number">3</span>)).T</span><br><span class="line">my_predicted_image = predict(d[<span class="string">"w"</span>], d[<span class="string">"b"</span>], my_image)</span><br><span class="line"></span><br><span class="line">plt.imshow(image)</span><br><span class="line">print(<span class="string">"y = "</span> + str(np.squeeze(my_predicted_image)) + <span class="string">", your algorithm predicts a \""</span> + classes[int(np.squeeze(my_predicted_image)),].decode(<span class="string">"utf-8"</span>) +  <span class="string">"\" picture."</span>)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag"># 吴恩达深度学习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/10/25/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0course1-week2-%E4%BD%9C%E4%B8%9A1/" rel="next" title="吴恩达深度学习course1 week2 作业1">
+                <i class="fa fa-chevron-left"></i> 吴恩达深度学习course1 week2 作业1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Kalia</p>
+              <p class="site-description motion-element" itemprop="description">Tomorrow is a new day.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Kalia</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
